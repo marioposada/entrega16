@@ -1,2 +1,3 @@
-export * from './category.action'
-export * from './products.action'
+export * from './category.actions'
+export * from './productos.action'
+export * from './user.actions'

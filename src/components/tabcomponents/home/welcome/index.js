@@ -8,7 +8,7 @@ const Welcome = ({name}) => {
       <Text style={styles.text1}>
         Hola <Text style={styles.text3}>{name}</Text>,
       </Text>
-      <Text style={styles.text}>Qué servicio estás buscando ?</Text>
+      <Text style={styles.text}>¿ Qué servicio estás buscando ?</Text>
     </View>
   );
 };

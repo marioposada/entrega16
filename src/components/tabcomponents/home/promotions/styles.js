@@ -9,7 +9,6 @@ export const styles = StyleSheet.create({
         marginVertical: 15,
         marginHorizontal: 10,
         borderRadius: 10,
-        borderWidth: 0.4,
       },
       text: {
         fontFamily: "Poppins_Bold",

@@ -2,6 +2,7 @@ import React , {useState, useEffect} from 'react'
 import { View,Text } from 'react-native'
 import {styles} from './styles'
 import { useDispatch, useSelector } from 'react-redux'
+import { ScrollView } from 'react-native'
 
 
 const CategoriesScreen = ({navigation}) => {
@@ -16,11 +17,13 @@ console.warn(categories)
     }, [categories])
 
     return (
+        <ScrollView style={styles.containerUp}>
         <View>
             <Text>Categories</Text>
             <Text>Categories</Text>
             <Text>Categories</Text>
         </View>
+        </ScrollView>
     )
 }
 

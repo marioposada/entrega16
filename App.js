@@ -4,6 +4,20 @@ import { useFonts } from "expo-font";
 import { Provider } from "react-redux";
 import AppNavigator from "./src/navigation/tabnavigation";
 import store from "./src/store";
+import {init} from './src/db/index';
+
+
+init()
+.then(() => {
+  console.log('Initialized database');
+})
+.catch(err => {
+  console.log('Initializing db failed.');
+  console.log(err);
+});
+
+
+
 
 export default function App() {
   const [loaded] = useFonts({
